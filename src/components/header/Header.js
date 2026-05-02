@@ -22,7 +22,14 @@ return (
                         navbarScroll
                     >
                     <NavLink className ="nav-link" to="/">Home</NavLink>
-                    <NavLink className ="nav-link" to="/watchList">Watch List</NavLink>      
+                   <NavLink 
+  to="/watchList" 
+  className={({ isActive }) => 
+    isActive ? "nav-link active" : "nav-link"
+  }
+>
+  Watch List
+</NavLink> 
                 </Nav>
                 <Button variant="outline-info" className="me-2">Login</Button>
                 <Button variant="outline-info">Register</Button>

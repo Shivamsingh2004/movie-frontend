@@ -1,9 +1,7 @@
 import axios from "axios";
 
 const api = axios.create({
-  baseURL: "https://leighton-jubate-unpenuriously.ngrok-free.dev",
-  withCredentials: true
+  baseURL: "http://localhost:8080",
 });
-
 
 export default api;
